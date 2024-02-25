@@ -15,11 +15,6 @@ function handleProduct(itemName, price) {
 
 }
 
-// Rest of your code...
-
-
-// Rest of your code...
-
 function removeFromCart(index) {
     let cartItems = getCartItemsFromStorage();
     cartItems.splice(index, 1);
@@ -31,13 +26,7 @@ function clearCart() {
 
 }
 
-/*function calculateTotal() {
-    let total = 0;
-    cartItems.forEach(item => {
-        total += item.price * item.quantity;
-    });
-    return total;
-}*/
+
 function updateCart(cartItems) {
     const cartList = document.getElementById('cart-items');
     const cartTotal = document.getElementById('cart-total');
@@ -123,9 +112,6 @@ function checkout(event) {
 }
 
 
-
-// Your existing JavaScript code
-
 function sendMessage() {
     var userInput = document.getElementById("user-input").value;
     var chatBox = document.getElementById("chat-box");
@@ -145,7 +131,6 @@ function sendMessage() {
 }
 
 function getBotResponse(userInput) {
-    // Add your predefined responses here
     switch (userInput.toLowerCase()) {
         case "hello":
             return "Hello! How can I assist you today?";
