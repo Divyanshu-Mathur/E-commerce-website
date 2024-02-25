@@ -1,0 +1,347 @@
+@font-face {
+    font-family: 'outfit';
+    src: url('fonts/Outfit-Bold.ttf') format('woff2'),
+        url('fonts/Outfit-Regular.ttf') format('woff');
+}
+
+
+* {
+    font-family: 'outfit';
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239, 225, 200);
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+}
+
+nav ul {
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+#logo {
+    height: 70px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li {
+    color: black;
+    display: flex;
+    margin-left: 70%;
+}
+
+.container {
+    margin-top: 200px;
+
+}
+
+#heading {
+    font-weight: bolder;
+    font-size: 160%;
+}
+
+.products {
+    display: flex;
+}
+
+.product {
+    width: 500px;
+    margin: 2%;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 80%;
+    height: 60%;
+    border: 2px black solid;
+}
+
+#more a {
+    color: black;
+}
+
+.product img:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 5px black;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    width: 25%;
+    display: none;
+}
+
+/* Your existing CSS styles */
+#chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #fff;
+    width: 300px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#chat-container {
+    padding: 10px;
+    height: 300px;
+    overflow-y: scroll;
+}
+
+
+
+.close-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+.checkout a {
+    color: black;
+    text-decoration: underline;
+}
+
+.checkout a:hover {
+    color: blue;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+    border-radius: 100px;
+}
+
+p {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+.container {
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+/* .product {
+    width: 500px;
+    max-height: 400px;
+    
+} */
+
+img {
+    border-radius: 30px;
+}
+
+.heading {
+    margin-left: 68px;
+    font-size: xx-large;
+    margin-bottom: 0;
+    font-weight: 700;
+}
+
+body {
+    background-color: white;
+}
+
+nav ul li a {
+    color: black;
+}
+
+nav {
+    background-color: rgba(240, 229, 229, 0.692);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.619);
+}
+
+.head2 {
+    margin-top: 80px;
+}
+
+.chat {
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: black;
+}
+
+nav {
+    display: flex;
+    color: black;
+}
+
+
+nav ul li a {
+    color: black;
+}
+
+
+nav ul {
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+#logo {
+    height: 70px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li {
+    color: white;
+    display: flex;
+    margin-left: 70%;
+}
+
+.close-btn {
+    background-color: black;
+    color: white;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    top: 10px;
+    right: 5px;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.send {
+    height: 35px;
+    width: 80px;
+    margin-top: 10px;
+}
+
+.IN {
+    padding-left: 10px;
+    margin-top: 8px;
+    height: 30px;
+    border: 2px solid black;
+    border-radius: 30px;
+}
+
+#close {
+    height: 40px;
+    width: 40px;
+}
+
+#cart-items button {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 30px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.cart {
+    width: 500px;
+}
+
+#clear {
+    width: 80px;
+    height: 30px;
+
+}
+
+#click-here {
+    width: 80px;
+    height: 30px;
+}
+
+#click-here a {
+    color: white;
+    text-decoration: none;
+}
+
+#click-here :hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.button-chat {
+    display: flex;
+    justify-content: right;
+}

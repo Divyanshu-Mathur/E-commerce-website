@@ -1,0 +1,236 @@
+@font-face {
+    font-family: 'outfit';
+    src: url('fonts/Outfit-Bold.ttf') format('woff2'),
+        url('fonts/Outfit-Regular.ttf') format('woff');
+}
+
+
+* {
+    font-family: 'outfit';
+}
+
+
+header {
+    background-color: #fff;
+    color: #fff;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    color: black;
+}
+
+nav {
+    display: flex;
+    color: black;
+}
+
+
+nav ul li a {
+    color: black;
+}
+
+
+nav ul {
+    display: flex;
+    color: black;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    color: black;
+}
+
+a {
+    color: black;
+}
+
+nav {
+    background-color: rgba(240, 229, 229, 0.692);
+}
+
+header {
+    background-color: rgba(255, 255, 255, 0.619);
+}
+
+#logo {
+    height: 70px;
+    margin: 10px;
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+
+}
+
+nav ul li {
+    color: white;
+    display: flex;
+    margin-left: 70%;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(239, 225, 200);
+}
+
+.container {
+    margin: 4%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    margin: 2%;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product img {
+    width: 80%;
+    height: 60%;
+    border: 2px black solid;
+}
+
+.product img:hover {
+    cursor: pointer;
+    box-shadow: 10px 10px 5px black;
+}
+
+button {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    color: black;
+    background-color: white;
+    box-shadow: 5px 5px 5px black;
+}
+
+.cart {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-left: 1px solid #ddd;
+    width: 250px;
+    display: none;
+}
+
+.checkout a {
+    color: black;
+    text-decoration: underline;
+}
+
+.checkout a:hover {
+    color: blue;
+}
+
+body {
+    background-color: white;
+}
+
+/* .container{
+    margin-top: 200px;
+} */
+
+h1 {
+    font-size: xx-large;
+}
+
+img {
+    border-radius: 30px;
+}
+
+p {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+button {
+    height: 50px;
+    width: 120px;
+    border-radius: 100px;
+}
+
+.galaxybuds {
+    height: 100px;
+}
+
+.container {
+    margin-top: 150px;
+}
+
+.product {
+    max-width: 350px;
+    max-height: 400px;
+
+}
+
+
+#cart-items button {
+    margin-left: 5px;
+    margin-right: 5px;
+    height: 30px;
+    width: 70px;
+    margin-bottom: 10px;
+}
+
+.cart {
+    width: 500px;
+}
+
+.close-btn {
+    background-color: black;
+    color: white;
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    margin-right: 20px;
+    top: 18px;
+    right: 10px;
+    padding: 5px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.close-btn {
+    height: 40px;
+    width: 40px;
+}
+
+#click-here {
+    width: 80px;
+    height: 30px;
+}
+
+#click-here a {
+    color: white;
+    text-decoration: none;
+}
+
+#click-here :hover {
+    background-color: white;
+    color: black;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: center;
+}

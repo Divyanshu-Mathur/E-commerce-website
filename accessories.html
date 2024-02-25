@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessories</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img\logo.png" alt="Error" id="logo">
+            <ul>
+                <li></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mobile.html" target="_main">Mobiles</a></li>
+                <li><a href="accessories.html" target="_main">Accessories</a></li>
+                <li><a href="#" onclick="showCart()">Cart (<span id="cart-item-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <div class="product" id="product1">
+            <img class="galaxybuds" src="img\galaxybuds.jpg" alt="galaxybuds">
+            <h4>Galaxy Buds</h4>
+            <p>&#8377 20,000</p>
+            <button onclick="handleProduct('Galaxy Buds', 20000)">Add to Cart</button>
+        </div>
+        <div class="product" id="product1">
+            <img src="img\iphcharge.jpg" alt="20w">
+            <h4>iPhone Charging Adapter</h4>
+            <p>&#8377 2,000</p>
+            <button onclick="handleProduct('iPhone Charging Adapter', 2000)">Add to Cart</button>
+        </div>
+        <div class="product" id="product1">
+            <img src="img\ligtousb.jpg" alt="USB">
+            <h4>Lighting to USB cable</h4>
+            <p>&#8377 1,500</p>
+            <button onclick="handleProduct('Lighting to USB cable', 1500)">Add to Cart</button>
+        </div>
+        <div class="product" id="product1">
+            <img src="img\headphonejack.jpg" alt="USB">
+            <h4>Headphonejack</h4>
+            <p>&#8377 1,500</p>
+            <button onclick="handleProduct('Headphonejack', 1500)">Add to Cart</button>
+        </div>
+        <div class="product" id="product1">
+            <img src="img\magsafech.jpg" alt="MSC">
+            <h4>MagSafe Charger</h4>
+            <p>&#8377 5,500</p>
+            <button onclick="handleProduct('MagSafe Charger', 5500)">Add to Cart</button>
+        </div>
+    </div>
+    <div class="cart" id="cart">
+        <button class="close-btn" onclick="hideCart()">×</button>
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: &#8377 <span id="cart-total">0</span></p>
+        <div class="checkout">
+            <p>For Checkout <button id="click-here"><a href="form.html">Click here</a></button></p>
+        </div>
+        <button onclick="clearCart()">Clear Cart</button>
+        <p id="thank-you-message" style="display: none;">Thank you! Your order has been placed.</p>
+    </div>
+    <footer>
+        <h4>Made By Divyanshu Mathur</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

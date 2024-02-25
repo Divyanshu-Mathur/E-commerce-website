@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Hub</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <img src="img\logo.png" alt="Error" id="logo">
+            <ul>
+                <li></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mobile.html" target="_main">Mobiles</a></li>
+                <li><a href="accessories.html" target="_main">Accessories</a></li>
+                <li><a href="#" onclick="showCart()">Cart (<span id="cart-item-count">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <p class="heading">iPhone</p>
+        <div class="products">
+            <div class="product" id="product1">
+                <img src="img\14.jpg" alt="14">
+                <h4> one 14</h4>
+                <p>&#8377 90,000</p>
+                <button onclick="handleProduct('iPhone 14',90000)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="img\14pro.jpg" alt="14Pro">
+                <h4>iPhone 14Pro</h4>
+                <p>&#8377 1,20,000</p>
+                <button onclick="handleProduct('iPhone 14Pro', 120000)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="img\15.jpg" alt="15">
+                <h4>iPhone 15</h4>
+                <p>&#8377 1,00,000</p>
+                <button onclick="handleProduct('iPhone 15', 100000)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="img\15pro.jpg" alt="15Pro">
+                <h4>iPhone 15Pro</h4>
+                <p>&#8377 1,30,000</p>
+                <button onclick="handleProduct('iPhone 15Pro', 130000)">Add to Cart</button>
+            </div>
+            <h5 id="more"><a href="mobile.html" target="_main">>>View More</a></h5>
+            <!-- Add more products as needed -->
+        </div>
+        <p class="heading head2">OnePlus</p>
+        <div class="products">
+            <div class="product" id="product1">
+                <img src="img\one+11r.jpg" alt="11">
+                <h4>OnePlus 11R</h4>
+                <p>&#8377 60,000</p>
+                <button onclick="handleProduct('OnePlus 11R', 60000)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="img\one12.jpg" alt="12">
+                <h4>OnePlus 12</h4>
+                <p>&#8377 90,000</p>
+                <button onclick="handleProduct('OnePlus 12', 90000)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="img\one+nord2.jpg" alt="Nord2">
+                <h4>OnePlus Nord ce 2Lite</h4>
+                <p>&#8377 15000</p>
+                <button onclick="handleProduct('OnePlus Nord ce 2Lite', 15000)">Add to Cart</button>
+            </div>
+            <div class="product" id="product2">
+                <img src="img\one+9.jpg" alt="Nord2">
+                <h4>OnePlus 9</h4>
+                <p>&#8377 55000</p>
+                <button onclick="handleProduct('OnePlus 9', 55000)">Add to Cart</button>
+            </div>
+            <h5 id="more"><a href="mobile.html" target="_main">>>View More</a></h5>
+            <!-- Add more products as needed -->
+        </div>
+    </div>
+
+    <div class="cart" id="cart">
+        <button id="close" class="close-btn" onclick="hideCart()">×</button>
+        <h2>Shopping Cart</h2>
+        <ul id="cart-items">
+            <!-- Cart items will be displayed here -->
+        </ul>
+        <p>Total: &#8377<span id="cart-total">0</span></p>
+        <div class="checkout">
+            <p>For Checkout <button id="click-here"><a href="form.html">Click here</a></button></p>
+        </div>
+        <button id="clear" onclick="clearCart()">Clear Cart</button>
+        <p id="thank-you-message" style="display: none;">Thank you! Your order has been placed.</p>
+    </div>
+    <div class="button-chat">
+        <button class="chat" onclick="showChatbot()">Open Chatbot</button>
+    </div>
+    <div id="chatbot" style="display: none;">
+        <button class="close-btn" onclick="hideChatbot()">×</button>
+        <div id="chat-container">
+            <div id="chat-box"></div>
+            <input class="IN" type="text" id="user-input" placeholder="Type your message...">
+            <button class="send" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <footer>
+        <h4>Made By Divyanshu Mathur</h3>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

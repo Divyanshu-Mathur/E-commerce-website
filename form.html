@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="style3.css">
+    <style>
+        .order-success-message {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #222;
+            padding: 20px;
+            border-radius: 5px;
+            text-align: center;
+            color: white;
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="img\logo.png" alt="" height="100%">
+    </header>
+    <div class="container">
+
+        <form id="orderForm">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Enter your First Name" required>
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Enter your Last Name" required>
+            <br>
+            <label for="phone">Mobile No.</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your mobile no." required pattern="\d{10}"
+                title="Please enter a 10-digit phone number">
+            <br>
+            <label for="email">Email Id</label>
+            <input type="email" id="email" name="email" placeholder="Email id" required
+                pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$" title="Please enter a valid email address">
+            <br>
+            <label for="country">Country</label>
+            <input type="text" id="country" name="country" placeholder="Country" required>
+            <br>
+            <label for="state">State</label>
+            <input type="text" id="state" name="state" placeholder="State" required>
+            <br>
+            <label for="address">Address</label>
+            <input type="text" id="address" name="address" placeholder="Address" required>
+            <br>
+            <div class="button-container">
+                <button type="button" onclick="submitOrder()">Submit</button>
+            </div>
+        </form>
+    </div>
+
+    <div class="order-success-message" id="successMessage">
+        <div class="popup-content">
+            <span class="close"
+                onclick="togglePopup('successPopup'); document.getElementById('registerBtn').style.display = 'none';">&times;</span>
+            <img src="img\3500833.png" alt="">
+            <h2>Your order has been placed successfully!</h2>
+        </div>
+    </div>
+    <script>
+        function submitOrder() {
+            // Validate the form fields
+            const firstName = document.getElementById("fname").value;
+            const lastName = document.getElementById("lname").value;
+            const phone = document.getElementById("phone").value;
+            const email = document.getElementById("email").value;
+            const country = document.getElementById("country").value;
+            const state = document.getElementById("state").value;
+            const address = document.getElementById("address").value;
+
+            if (!firstName || !lastName || !phone || !email || !country || !state || !address) {
+                alert("Please fill in all the required fields.");
+                return;
+            }
+
+            // Validate phone number format
+            if (!/^\d{10}$/.test(phone)) {
+                alert("Please enter a valid 10-digit phone number.");
+                return;
+            }
+
+            // Validate email format
+            if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
+                alert("Please enter a valid email address.");
+                return;
+            }
+
+            // Assuming the form is valid, show a confirmation popup
+            // alert("Your order has been placed");
+
+            // Show the order success message
+            showOrderSuccessMessage();
+
+            // Redirect to main.html after a delay (you can modify this part based on your needs)
+            setTimeout(function () {
+                window.location.href = "index.html";
+            }, 1000);
+        }
+
+        function showOrderSuccessMessage() {
+            const successMessage = document.getElementById("successMessage");
+            successMessage.style.display = "block";
+
+            setTimeout(() => {
+                successMessage.style.display = 'none';
+            }, 1000);
+        }
+        clearcart();
+    </script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
