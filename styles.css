@@ -111,9 +111,9 @@ button:hover {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #f9f9f9;
+    background-color: #efc8c8d3;
     padding: 20px;
-    border-left: 1px solid #ddd;
+    border: 2px black solid;
     width: 25%;
     display: none;
 }
